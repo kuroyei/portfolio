@@ -1,0 +1,206 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  color: #fff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*背景用*/
+body {
+  padding: 30px;
+  position: relative;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+
+/*--------------------------------
+ 画像
+---------------------------------*/
+.main-pic img{
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.397));
+  transition: 1s all;
+  margin-bottom: 40px;
+}
+.main-pic img:hover {
+  transform: scale(1.02,1.02);
+  transition: 1s all;
+
+}
+
+h1{
+  margin-bottom: 30px;
+}
+h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ ボタン
+---------------------------------*/
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*竹林人間を崇める！*/
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*押す*/
+
+a.btn-emergency {
+  position: relative;
+
+  display: block;
+
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+a.btn-emergency:hover .btn-emergency-top {
+  top: 10px;
+
+  height: 50px;
+}
+
+a.btn-emergency:active .btn-emergency-top {
+  top: 20px;
+
+  height: 40px;
+}
+
+.btn-emergency-top {
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 160px;
+  height: 60px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  background: #d62d2d;
+}
+
+.btn-emergency-top:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  width: 160px;
+  height: 60px;
+
+  content: "";
+
+  border-radius: 80px / 30px;
+  background: #ed4c4c;
+}
+
+.btn-emergency-top span {
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+
+  color: #f6a3a3;
+}
+
+.btn-emergency-bottom {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 200px;
+  height: 80px;
+
+  border-radius: 100px / 40px;
+  background: #d8e4ea;
+  -webkit-box-shadow: 0 8px 0 #c4cacc;
+  box-shadow: 0 8px 0 #c4cacc;
+}
+
+.footer{
+    margin-top: 40px;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #FFF;
+}

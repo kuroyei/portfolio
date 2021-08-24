@@ -1,0 +1,1 @@
+document.write('<footer class="footer"><div class="copyright">(C) Kuroyei</div></footer>')

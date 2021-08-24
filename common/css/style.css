@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
+
+body {
+  font-family: 'Roboto', 'Noto Sans JP', 'Noto Sans SC', 'sans-serif';
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+  
+.sp-only {
+  display: none;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+  
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+  
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: .05em;
+}
+  
+.header-logo a {
+  font-size: 30px;
+  color: #333;
+}
+  
+.gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+  
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+  
+.gnav-item a {
+  position: relative;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 5px;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #333;
+}
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+  
+.gnav-item a:hover:after {
+  width: 100%;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+main {
+  margin: 0;
+}
+
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+.page-top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  filter: drop-shadow(5px 5px 5px #aaa)
+}
+  
+.page-top a{
+  display: block;
+  text-decoration: none;
+}
+  
+.pagetop:hover{
+  opacity: 0.85;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+}
+  
+.copyright {
+  font-size: 10px;
+  text-align: center;
+}
+  
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+  
+  .sp-only {
+    display: block;
+  }
+  /* ヘッダー */
+  .header .container {
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item a {
+    font-size: 14px;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,1 @@
+document.write('<div class="page-top" id="js-page-top"><a href="#header" title="ページトップへ戻る"><img src="https://kuroyei.com/common/img/page-top.png" alt="▲ PAGE TOP" width="50" height="50"></a></div>')
